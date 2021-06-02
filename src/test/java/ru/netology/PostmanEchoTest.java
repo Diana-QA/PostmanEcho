@@ -41,7 +41,7 @@ public class PostmanEchoTest {
     }
 
     @Test
-    void shouldCurrentDat() {
+    void shouldReturnCurrency() {
         // Given - When - Then
 // Предусловия
         given()
@@ -53,7 +53,7 @@ public class PostmanEchoTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("currency:USD"))
+                .body("data", equalTo("currency:RUB"))
         ;
     }
 }
